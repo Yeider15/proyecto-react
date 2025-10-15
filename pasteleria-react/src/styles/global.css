@@ -1,0 +1,62 @@
+/* src/styles/global.css */
+
+/* Reset de márgenes y rellenos para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general para el body */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff5e5;
+  color: #5d4037;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background: #333;
+  padding: 10px 20px;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff8e1;
+  text-decoration: none;
+}
+.navbar a {
+  color: #fff8e1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ffd180;
+}
+
+/* Botones comunes */
+button,
+.btn {
+  background-color: #8b4513;
+  color: #fff5e1;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #a0522d;
+  transform: scale(1.05);
+}

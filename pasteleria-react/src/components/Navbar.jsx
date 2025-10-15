@@ -16,7 +16,7 @@ function Navbar() {
             <li className="nav-item"><Link className="nav-link" to="/login">Iniciar Sesión</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/about">Nosotros</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/contact">Contacto</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/cart">🛒</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/carrito">🛒</Link></li>
           </ul>
         </div>
       </div>

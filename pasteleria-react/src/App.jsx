@@ -1,19 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Usamos react-router-dom para manejar las rutas
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ProductPage from './pages/ProductPage';  // Página de productos
+import ProductPage from './pages/ProductPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<ProductPage />} />
-        <Route path="/detalle_producto/:idProducto" element={<ProductDetailPage />} />
-      </Routes>
-      <Footer />
+      {/* Todo el contenido envuelto en un solo contenedor con ID 'app-grid-container' */}
+      <div id="root">
+          
+          <Navbar /> 
+          
+          {/* El contenido principal, que debe estirarse y ocupar el espacio central */}
+          <main className="app-main-content"> 
+              <Routes>
+                  <Route path="/" element={<ProductPage />} />
+                  <Route path="/detalle_producto/:idProducto" element={<ProductDetailPage />} />
+                  <Route path="/carrito" element={<CartPage />} />
+              </Routes>
+          </main>
+          
+          <Footer />
+          
+      </div>
     </Router>
   );
 }

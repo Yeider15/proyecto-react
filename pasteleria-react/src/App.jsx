@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // U
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProductPage from './pages/ProductPage';  // Página de productos
+import ProductDetailPage from './pages/ProductDetailPage';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<ProductPage />} />
-        {/* Aquí puedes agregar más rutas si es necesario en el futuro */}
+        <Route path="/detalle_producto/:idProducto" element={<ProductDetailPage />} />
       </Routes>
       <Footer />
     </Router>

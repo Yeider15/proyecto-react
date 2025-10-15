@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import ProductDetail from "../components/ProductDetail";
-import "../styles/productDetailPage.css";
+import "../styles/product-detail-page.css";
 
 import TortaCuadradaChocolate from "../assets/img/T-Cuadrada-Chocolate.jpg";
 import TortaCuadradaFrutas from "../assets/img/T-Cuadrada-Frutas.jpg";

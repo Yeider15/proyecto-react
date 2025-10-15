@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "../components/ProductCard"; // Importamos el componente ProductCard
-import "../styles/productPage.css"; // Estilos para la página de productos
+import "../styles/product-page.css"; // Estilos para la página de productos
 
 // Importamos las imágenes de los productos
 import TortaCuadradaChocolate from "../assets/img/T-Cuadrada-Chocolate.jpg";

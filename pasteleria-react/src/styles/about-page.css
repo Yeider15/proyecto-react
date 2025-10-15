@@ -1,0 +1,82 @@
+/* src/styles/nosotrosPage.css */
+
+/* Fondo general de la página Nosotros, adaptando #body1 */
+.nosotros-container {
+    font-family: 'Lato', sans-serif;
+    /* La imagen de fondo se maneja mejor en el body global o en este contenedor, 
+       dependiendo de tu estructura de React, pero la aplicamos aquí para seguir el original. */
+    background: url("imagenes/fondo2b.jpg") center/cover fixed no-repeat;
+    color: #4E342E;
+    line-height: 1.6;
+    padding-bottom: 50px; /* Asegura espacio antes del Footer */
+}
+
+/* Estilos de Encabezado (Registro/Nosotros/Contacto) */
+.registro-header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#logo2 {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 180px;
+}
+
+.registro-header h1 { /* Adaptado de .registro-header h2 */
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #8B4513;
+}
+
+/* Tarjeta de contenido (.card) */
+.card {
+    max-width: 800px; 
+    margin: 30px auto; 
+    padding: 25px;
+    background: #fff; 
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,.15); 
+}
+
+.card h3 {
+    margin-top: 20px; 
+    color: #8D6E63; 
+    font-weight: bold;
+    border-left: 5px solid #FFD180; 
+    padding-left: 10px;
+    text-transform: uppercase; 
+    font-size: 18px;
+}
+
+/* Bloque de imágenes fuera del card (.imagenes-nosotros) */
+.imagenes-nosotros {
+    max-width: 900px; 
+    margin: 40px auto;
+    display: flex; 
+    gap: 25px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.imagenes-nosotros img {
+    width: 45%; 
+    max-width: 350px; 
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    transition: .4s;
+}
+
+.imagenes-nosotros img:hover { 
+    transform: scale(1.08); 
+    box-shadow: 0 12px 28px rgba(0,0,0,.25); 
+}

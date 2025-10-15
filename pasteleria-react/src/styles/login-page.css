@@ -1,0 +1,109 @@
+/*
+ * Estos estilos están extraídos de tu CSS completo y cubren:
+ * 1. Estilos generales del cuerpo/contenedor.
+ * 2. Estilos del encabezado (logo y título).
+ * 3. Estilos del formulario (incluyendo inputs, labels, errores y botón).
+ */
+
+/* ---------------------- ESTILOS DE CUERPO/CONTENEDOR ---------------------- */
+
+/* Estilo que replica el fondo de #body2, usado típicamente para Registro/Login/Contacto */
+.login-page-container {
+    /* Si tienes una imagen de fondo, ajústala aquí */
+    /* background: url("../assets/img/fondo2b.jpg") center/cover fixed no-repeat; */
+    padding-bottom: 50px;
+    min-height: 100vh; /* Para que ocupe toda la altura */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #2C2C2C;
+}
+
+/* ---------------------- ESTILOS DE ENCABEZADO (REGISTRO-HEADER) ---------------------- */
+
+/* Contenedor del logo y título */
+.registro-header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Logo */
+#logo2 {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 180px;
+}
+
+/* Título */
+.registro-header h2 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #8B4513; /* Color principal del título */
+    /* El siguiente estilo puede ser un override para Contacto, pero lo dejo si es tu estilo de título */
+    /* font-weight: bold; */
+    /* color: #4E342E; */
+}
+
+
+/* ---------------------- ESTILOS DE FORMULARIO (#loginForm) ---------------------- */
+
+/* Estilo base del formulario */
+form#loginForm { /* Usamos el ID del formulario en React para mayor especificidad */
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+form#loginForm label {
+    font-weight: bold;
+    color: #5D4037;
+    margin-top: 10px;
+    display: block;
+}
+
+form#loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #d7ccc8;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form#loginForm input:focus {
+    border-color: #8B4513;
+    outline: none;
+    box-shadow: 0 0 8px rgba(139, 69, 19, 0.3);
+}
+
+/* Errores */
+.error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 3px;
+    display: block; /* Asegura que el error ocupe su propia línea si es necesario */
+}
+
+/* Botón (aplicando el estilo de botón genérico) */
+form#loginForm button {
+    background-color: #8B4513;
+    color: #FFF5E1;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-top: 10px;
+}
+
+form#loginForm button:hover {
+    background-color: #A0522D;
+    transform: scale(1.02); /* Ligeramente menos escala que el genérico (1.05) para botones de formulario */
+}

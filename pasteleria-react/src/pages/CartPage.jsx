@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import CartItem from '../components/CartItem'; 
-import '../styles/cartPage.css'; // Asegúrate que esta ruta es correcta
+import '../styles/cart-page.css'; // Asegúrate que esta ruta es correcta
 
 function CartPage() {
     // 1. Estado para el carrito: Inicializa leyendo desde localStorage
